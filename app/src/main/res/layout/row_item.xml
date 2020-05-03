@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/recipe_name"
+        android:layout_width="287dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/rest_image"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Recipe Name" />
+
+    <ImageView
+        android:id="@+id/rest_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/recipe_cals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:text="202 cal"
+        app:layout_constraintBottom_toBottomOf="@+id/cal_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/recipe_weight"
+        app:layout_constraintTop_toBottomOf="@+id/recipe_weight" />
+
+    <TextView
+        android:id="@+id/recipe_servings"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="3dp"
+        android:text="4 Servings"
+        app:layout_constraintStart_toStartOf="@+id/recipe_name"
+        app:layout_constraintTop_toBottomOf="@+id/recipe_name" />
+
+    <TextView
+        android:id="@+id/recipe_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="65 g"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/weight_label" />
+
+    <TextView
+        android:id="@+id/weight_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="8dp"
+        android:text="Weight:"
+        app:layout_constraintStart_toEndOf="@+id/recipe_servings"
+        app:layout_constraintTop_toBottomOf="@+id/recipe_name" />
+
+    <TextView
+        android:id="@+id/cal_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Calories:"
+        app:layout_constraintEnd_toEndOf="@+id/weight_label"
+        app:layout_constraintTop_toBottomOf="@+id/weight_label" />
+
+    <TextView
+        android:id="@+id/ingredient_recipe"
+        android:layout_width="160dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="22dp"
+        android:text="Ingredients"
+        app:layout_constraintEnd_toStartOf="@+id/cal_label"
+        app:layout_constraintStart_toEndOf="@+id/rest_image"
+        app:layout_constraintTop_toBottomOf="@+id/recipe_servings" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
